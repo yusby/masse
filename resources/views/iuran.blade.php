@@ -2,6 +2,7 @@
 @section('title','IURAN')
 
 @section('content')
+<br><br>
 <style>
  .cont{
     width: 400px;

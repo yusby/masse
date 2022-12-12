@@ -11,7 +11,7 @@
 </style>
 <div class="container cont">
    <div class=" text-center">
-    <h1>Login<h1>
+    <h1>Register<h1>
    
     </div>
     <form>

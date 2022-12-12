@@ -28,3 +28,5 @@ Route::view('/iuran','iuran');
 Route::view('/pengajuan','pengajuan');
 Route::view('/akun','akun');
 Route::view('/riwayat','riwayat');
+Route::view('/login','login');
+Route::view('/register','register');
