@@ -36,9 +36,95 @@
     </div>
     </nav>
     
-    @yield ('content')
+    <style type="text/css">
+                body {
+                    margin: 0;
+                    background-image: url("asset/background.gif");
+                    background-repeat: no-repeat;
+                    background-attachment: fixed;
+                    background-size: cover;
+                }
+                
+    </style>
+    
 
-    <!-- JavaScript Bundle with Popper -->
+    @yield ('content')
+    
+        <footer class="text-center text-lg-start bg-primary navbar-dark text-white">
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+       
+        <div class="me-5 d-none d-lg-block">
+        <span>Kenali dan hubungi kami lebih jauh:</span>
+        </div>
+    </section>
+    
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+        
+        <div class="row mt-3">
+          
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          
+            <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Masse
+            </h6>
+            <p>
+                Membantu Mahasiswa Mendapatkan Bantuan Biaya Kesehatan Dengan Asas Tolong Menolong dan Kebersamaan
+            </p>
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+                Products
+            </h6>
+            <p>
+                <a href="#!" class="text-reset">Iuran</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Pengajuan</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Akun</a>
+            </p>
+           
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">
+                Our Tim
+            </h6>
+            <p>
+                <a href="#!" class="text-reset">Yusuf Bachtiar</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Alief Ikhsan</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Adinda Maulida</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Memei Sri Mulyani</a>
+            </p>
+            <p>
+                <a href="#!" class="text-reset">Andi Salwa Diva</a>
+            </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i> UPI Purwakarta</p>
+            <p>
+                <i class="fas fa-envelope me-3"></i>
+                masse@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> 081223808334</p>
+            <p><i class="fas fa-print me-3"></i> 081234567890</p>
+            </div>
+        </div>
+        </div>
+    </section>
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="">Masse</a>
+    </div>
+    </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
