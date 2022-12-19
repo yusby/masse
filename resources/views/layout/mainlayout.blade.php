@@ -28,6 +28,19 @@
             <a class="nav-link" aria-current="page" href="/akun">Akun</a>
             </li>
         </ul>
+
+        @auth
+        <div class="btn btn-primary me-2"><p>Hai Mahasiswa Sehat <b>{{ Auth::user()->name }}</b></p></div>
+        <a class="btn btn-warning me-2" href="{{ route('password') }}">Change Password</a>
+        <a class="btn btn-danger me-2" href="{{ route('logout') }}">Logout</a>
+        @endauth
+        @guest
+        <a class="btn btn-danger me-2" href="{{ route('login') }}">Login</a>
+        <a class="btn btn-info me-2" href="{{ route('register') }}">Register</a>
+        @endguest
+        
+        
+
         <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button>

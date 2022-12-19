@@ -1,7 +1,4 @@
-@extends('layout.mainlayout')
-@section('title','AKUN')
 @extends('app')
-
 @section('content')
 <div class="row">
     <div class="col-md-6">
