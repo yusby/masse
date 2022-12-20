@@ -1,0 +1,17 @@
+.profile {
+    text-align: center;
+}
+
+.profile h1 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.profile p {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.profile .btn {
+    margin-top: 1em;
+}

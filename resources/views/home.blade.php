@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="card">
                     <img src="asset/1.jpg" class="card-img-top" alt="img1">
                     <div class="card-body">
@@ -33,7 +33,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="card">
                     <img src="asset/2.jpg" class="card-img-top" alt="img2">
                     <div class="card-body">
@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <div class="card">
                     <img src="asset/3.jpg" class="card-img-top" alt="img3">
                     <div class="card-body">

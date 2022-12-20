@@ -23,6 +23,12 @@ Route::get('about', function () {
 });
 
 
+//Route::get('/akun', function () {
+//    $user = ['name', 'username', 'birthday', 'address', 'phone'];
+//    return view('akun', ['user' => 'name' ,'username', 'birthday', 'address', 'phone']);
+//});
+
+
 Route::view('/mainlayout','mainlayout');
 Route::view('/home','home');
 Route::view('/iuran','iuran');
