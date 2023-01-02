@@ -1,7 +1,10 @@
 <?php
 
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\IuranController;
+use App\Http\Controllers\BayarController;
 use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -34,7 +37,8 @@ Route::view('/home','home');
 Route::view('/iuran','iuran');
 Route::view('/pengajuan','pengajuan');
 Route::view('/akun','akun');
-Route::view('/riwayat','riwayat');
+
+
 // Route::view('/login','login');
 // Route::view('/register','register');
 
@@ -49,3 +53,10 @@ Route::post('login', [UserController::class, 'login_action'])->name('login.actio
 Route::get('password', [UserController::class, 'password'])->name('password');
 Route::post('password', [UserController::class, 'password_action'])->name('password.action');
 Route::get('logout', [UserController::class, 'logout'])->name('logout');
+
+Route::get('/iuran',[IuranController::class,'iuran']);
+Route::get('/bayar',[BayarController::class,'bayar']);
+Route::get('/bayar/create',[BayarController::class,'create']);
+Route::post('/bayar/bayar/store',[BayarController::class,'store']);
+Route::get('/bayar/bayar/store',[BayarController::class,'store']);
+Route::post('/store',[BayarController::class,'store']);

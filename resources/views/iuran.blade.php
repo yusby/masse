@@ -1,35 +1,52 @@
 @extends('layout.mainlayout')
 @section('title','IURAN')
 
+
 @section('content')
-<br><br>
+
+@foreach($iuran as $i)
 <style>
  .cont{
-    width: 400px;
+    width: 800px;
     height: 800px;
  }
 </style>
-
 <div class="container cont">
-   <div class=" text-center border border-dark border-3 ">
-    <h1>Kas Tagihan<h1>
-    <br>    
-    <img src="asset/barcode1.gif" class="rounded mx-3" style="width: 150px" alt="Logo">
+   <div class=" text-center">
     <br>
-    <br>
-    <p class="fs-6">This is your QR Code for Payment</p>
-    <p class="fs-6">Total Bayar {10.000}</p>
-    <p class="fs-6">Upload Bukti Pembayaran</p>
-
+    <h1>Tagihan Iuran<h1>
+    </div>    
+        
     <div class="mb-3">
-        <label for="formFile" class="form-label"></label>
-        <input class="form-control" type="file" id="formFile">
+        <label for="exampleInputEmail1" class="form-label">Nomer Tagihan</label>
+        <label type="text" class="form-control" id="nomertagihan">{{$i -> notagihan}}<label>
+        
     </div>
-    <a class="fs-6" href="/riwayat"><p>Selesai</p></a>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Jumlah Tagihan</label>
+        <label type="text" class="form-control" id="nomertagihan">{{$i -> jumlahtagihan}}<label>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Tanggal Tagihan</label>
+        <label type="text" class="form-control" id="nomertagihan">{{$i -> tanggaltagihan}}<label>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Virtual Akun</label>
+        <label type="text" class="form-control" id="nomertagihan">{{$i -> virtualakun}}<label>
+    </div>
+    <div class=" text-center">
+    <br>
+    </form>
+    <h5>Mohon Melakukan Pembayaran Tepat Waktu<h5>
+    <a class="download btn btn-primary" href="/bayar/create">Kirim Bukti Pembayaran</a>
+    </div>
+</div>
 
-</div>
-    </div>
-</div>
+<tr>
+    <td>{{$i -> notagihan}}</td>
+</tr>
+
+@endforeach
 
 @endsection
 

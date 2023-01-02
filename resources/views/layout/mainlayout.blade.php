@@ -22,6 +22,9 @@
             <a class="nav-link" aria-current="page" href="/iuran">Iuran</a>
             </li>
             <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/bayar">Riwayat Pembayaran</a>
+            </li>
+            <li class="nav-item">
             <a class="nav-link" aria-current="page" href="/pengajuan">Pengajuan</a>
             </li>
             <li class="nav-item">

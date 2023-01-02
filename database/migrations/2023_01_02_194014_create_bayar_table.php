@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('iuran', function (Blueprint $table) {
-            $table->id('notagihan');
-            $table->string('jumlahtagihan');
-            $table->string('tanggaltagihan');
-            $table->string('virtualakun');
+        Schema::create('bayar', function (Blueprint $table) {
+            $table->string('username');
+            $table->string('nomertagihan');
             $table->string('buktipembayaran');
+            $table->string('updated_at');
+            $table->string('created_at');
+            
         });
     }
 
@@ -29,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('iuran');
+        Schema::dropIfExists('bayar');
     }
 };
