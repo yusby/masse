@@ -3,6 +3,7 @@
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\IuranController;
 use App\Http\Controllers\BayarController;
+use App\Http\Controllers\PengajuanController;
 use Illuminate\Support\Facades\Route;
 
 
@@ -36,7 +37,7 @@ Route::view('/mainlayout','mainlayout');
 Route::view('/home','home');
 Route::view('/iuran','iuran');
 Route::view('/pengajuan','pengajuan');
-Route::view('/akun','akun');
+//Route::view('/akun','akun');
 
 
 // Route::view('/login','login');
@@ -60,3 +61,11 @@ Route::get('/bayar/create',[BayarController::class,'create']);
 Route::post('/bayar/bayar/store',[BayarController::class,'store']);
 Route::get('/bayar/bayar/store',[BayarController::class,'store']);
 Route::post('/store',[BayarController::class,'store']);
+
+//Route pengajuan
+Route::get('/pengajuan/buat',[PengajuanController::class,'buat']);
+Route::post('/pengajuan/simpan',[PengajuanController::class,'simpan']);
+Route::get('/pengajuan/simpan',[PengajuanController::class,'simpan']);
+Route::post('/pengajuan/pengajuan/simpan',[PengajuanController::class,'simpan']);
+Route::post('/simpan',[PengajuanController::class,'simpan']);
+Route::get('/statuspengajuan',[PengajuanController::class,'statuspengajuan']);

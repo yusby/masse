@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row text-center">
             <div class="col">
-                <h2>Kelebihan Layanan</h2>
+                <h2>Layanan</h2>
             </div>
         </div>
         <div class="row">

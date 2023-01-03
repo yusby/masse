@@ -28,13 +28,13 @@
             <a class="nav-link" aria-current="page" href="/pengajuan">Pengajuan</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/akun">Akun</a>
+            <a class="nav-link" aria-current="page" href="/statuspengajuan">Status Pengajuan</a>
             </li>
         </ul>
 
         @auth
-        <div class="btn btn-primary me-2"><p>Hai Mahasiswa Sehat <b>{{ Auth::user()->name }}</b></p></div>
-        <a class="btn btn-warning me-2" href="{{ route('password') }}">Change Password</a>
+        <div class="btn btn-primary me-2"><p>Hai Sehat <b>{{ Auth::user()->name }}</b></p></div>
+        
         <a class="btn btn-danger me-2" href="{{ route('logout') }}">Logout</a>
         @endauth
         @guest
@@ -97,9 +97,6 @@
             </p>
             <p>
                 <a href="#!" class="text-reset">Pengajuan</a>
-            </p>
-            <p>
-                <a href="#!" class="text-reset">Akun</a>
             </p>
            
             </div>

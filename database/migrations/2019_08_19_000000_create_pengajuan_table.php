@@ -15,18 +15,11 @@ return new class extends Migration
     {
         Schema::create('pengajuan', function (Blueprint $table) {
             $table->id();
-            $table->string('username');
-            $table->string('password');
             $table->text('nama');
-            $table->string('ttl');
-            $table->string('alamat');
-            $table->string('norek');
-            $table->string('namabank');
-            $table->string('universitas');
-            $table->string('fakultas');
-            $table->string('jurusan');
-            $table->string('noktm');
-            $table->longText('norekening');
+            $table->string('bank');
+            $table->string('faskes');
+            $table->longText('rekening');
+            $table->string('nominal');
            
         });
     }
